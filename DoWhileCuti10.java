@@ -17,8 +17,17 @@ public class DoWhileCuti10 {
                     System.out.println("Sisa jatah cuti anda :" + jatahCuti);
                 } else {
                     System.out.println("Jatah cuti kurang");
-                    break;
+                    System.out.println("Apakah ingin mencoba lagi (y/n)");
+                    konfirmasi = input10.next();
+                    if (!konfirmasi.equalsIgnoreCase("y")) {
+                        break;
+                    }
+                    
                 }
+            } else if (konfirmasi.equalsIgnoreCase("n")) {
+                break;
+            } else {
+                
             }
         } while (jatahCuti > 0);
     }
